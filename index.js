@@ -11,3 +11,11 @@ function alphabetGenerator() {
     }
     return out;
   }
+
+function sGenerator() {
+    const specialChar = ["-", "_", ".", "@"];
+    let out = "";
+    out = out + specialChar[Math.floor(Math.random() * specialChar.length)];
+    return out;
+  }
+  
