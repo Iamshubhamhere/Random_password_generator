@@ -12,10 +12,19 @@ function alphabetGenerator() {
     return out;
   }
 
-function sGenerator() {
+function SymbolGenerator() {
     const specialChar = ["-", "_", ".", "@"];
     let out = "";
     out = out + specialChar[Math.floor(Math.random() * specialChar.length)];
     return out;
   }
-  
+
+
+function NumberGenerator() {
+    const number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    let out = "";
+    for (let i = 0; i < 4; number.length) {
+      out = out + number[Math.floor(Math.random() * number.length)];
+    }
+    return out;
+  }
