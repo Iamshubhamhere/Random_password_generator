@@ -28,3 +28,8 @@ function NumberGenerator() {
     }
     return out;
   }
+
+function generatePassword() {
+    const pass = alphabetGenerator() + SymbolGenerator() + NumberGenerator();
+    return pass;
+  }
